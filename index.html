@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaunchPy - Transform SDEs into AI Engineers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Launch<span>Py</span></a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Transform Your Career from SDE to <span class="gradient-text">AI Engineer</span></h1>
+                    <p>Launch your career in AI with our industry-leading curriculum designed specifically for Software Development Engineers.</p>
+                    <div class="cta-buttons">
+                        <a href="course.html" class="btn primary-btn">Explore Course</a>
+                        <a href="#" class="btn secondary-btn" id="scheduleDemo">Schedule Demo</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/ai-illustration.svg" alt="AI Engineering Illustration">
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Why Choose LaunchPy?</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-code feature-icon"></i>
+                        <h3>Built for SDEs</h3>
+                        <p>Curriculum designed specifically for software engineers transitioning to AI roles</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-brain feature-icon"></i>
+                        <h3>AI Specialization</h3>
+                        <p>Deep dive into machine learning, NLP, computer vision, and generative AI</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-laptop-code feature-icon"></i>
+                        <h3>Hands-on Projects</h3>
+                        <p>Build AI solutions that solve real-world problems and showcase your skills</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-users feature-icon"></i>
+                        <h3>Industry Mentors</h3>
+                        <p>Learn directly from AI practitioners working at leading tech companies</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-highlight">
+            <div class="container">
+                <div class="course-content">
+                    <span class="tag">Featured Course</span>
+                    <h2>AI Engineering</h2>
+                    <p>Our comprehensive course transforms Software Development Engineers into skilled AI Engineers through project-based learning and industry-relevant curriculum.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> 12-week intensive program</li>
+                        <li><i class="fas fa-check"></i> Live instructor-led sessions</li>
+                        <li><i class="fas fa-check"></i> Hands-on AI projects portfolio</li>
+                        <li><i class="fas fa-check"></i> Career transition support</li>
+                    </ul>
+                    <a href="course.html" class="btn primary-btn">View Course Details</a>
+                </div>
+                <div class="course-image">
+                    <img src="images/course-preview.svg" alt="AI Engineering Course Preview">
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">Success Stories</h2>
+                <div class="testimonial-slider" id="testimonialSlider">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-content">
+                            <p>"LaunchPy helped me transition from a backend developer to an AI engineer at a top tech company. The curriculum was challenging but perfectly tailored for SDEs like me."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial-1.svg" alt="Testimonial Author">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>Former Backend Developer, Now AI Engineer at TechCorp</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The hands-on projects and mentorship at LaunchPy were game-changers. I built a complete AI portfolio that helped me land multiple job offers in just two months."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial-2.svg" alt="Testimonial Author">
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <p>Former Full-Stack Developer, Now ML Engineer at AI Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"As a software engineer with no AI background, LaunchPy provided the perfect bridge to transition my career. Their focus on practical implementation made learning complex AI concepts accessible."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial-3.svg" alt="Testimonial Author">
+                            <div class="author-info">
+                                <h4>Priya Sharma</h4>
+                                <p>Former SDE, Now AI Research Engineer at DataInnovate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-arrow prev" id="prevBtn"><i class="fas fa-arrow-left"></i></button>
+                    <div class="slider-dots" id="sliderDots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <button class="slider-arrow next" id="nextBtn"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Launch Your AI Career?</h2>
+                <p>Enrollment is now open for our next AI Engineering cohort</p>
+                <a href="course.html#signup" class="btn primary-btn">Enroll Now</a>
+                <a href="contact.html" class="btn secondary-btn">Contact Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <a href="index.html">Launch<span>Py</span></a>
+                    </div>
+                    <p>Transforming Software Engineers into AI Engineers</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="course.html">Course</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> info@launchpy.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> San Francisco, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 LaunchPy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for schedule demo -->
+    <div class="modal" id="scheduleModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Schedule a Demo</h2>
+            <form id="demoForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time</label>
+                    <select id="time" name="time" required>
+                        <option value="">Select a time</option>
+                        <option value="9:00 AM">9:00 AM</option>
+                        <option value="11:00 AM">11:00 AM</option>
+                        <option value="1:00 PM">1:00 PM</option>
+                        <option value="3:00 PM">3:00 PM</option>
+                        <option value="5:00 PM">5:00 PM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Current Role/Experience</label>
+                    <textarea id="experience" name="experience" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

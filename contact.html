@@ -1,180 +1,253 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - LaunchPy</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">Launch<span>Py</span></a>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="course.html">Course</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="contact-header">
-            <div class="container">
-                <h1>Contact Us</h1>
-                <p>Have questions? We're here to help you on your journey to becoming an AI Engineer.</p>
-            </div>
-        </section>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Us - LaunchPy</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">Launch<span>Py</span></a>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
 
-        <section class="contact-main">
-            <div class="container">
-                <div class="contact-grid">
-                    <div class="contact-form-container">
-                        <h2>Send Us a Message</h2>
-                        <form id="contactForm" class="contact-form">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="name">Full Name</label>
-                                    <input type="text" id="name" name="name" required>
+        <main>
+            <section class="contact-header">
+                <div class="container">
+                    <h1>Contact Us</h1>
+                    <p>
+                        Have questions? We're here to help you on your journey
+                        to becoming an AI Engineer.
+                    </p>
+                </div>
+            </section>
+
+            <section class="contact-main">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-form-container">
+                            <h2>Send Us a Message</h2>
+                            <form id="contactForm" class="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="name">Full Name</label>
+                                        <input
+                                            type="text"
+                                            id="name"
+                                            name="name"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            name="email"
+                                            required
+                                        />
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="email">Email Address</label>
-                                    <input type="email" id="email" name="email" required>
+                                    <label for="subject">Subject</label>
+                                    <input
+                                        type="text"
+                                        id="subject"
+                                        name="subject"
+                                        required
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea
+                                        id="message"
+                                        name="message"
+                                        rows="6"
+                                        required
+                                    ></textarea>
+                                </div>
+                                <button type="submit" class="btn primary-btn">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                        <div class="contact-info-container">
+                            <h2>Get in Touch</h2>
+                            <div class="contact-info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h3>Email Us</h3>
+                                    <p>info@launchpy.com</p>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="6" required></textarea>
-                            </div>
-                            <button type="submit" class="btn primary-btn">Send Message</button>
-                        </form>
-                    </div>
-                    <div class="contact-info-container">
-                        <h2>Get in Touch</h2>
-                        <div class="contact-info-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h3>Email Us</h3>
-                                <p>info@launchpy.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-social">
-                            <h3>Connect With Us</h3>
-                            <div class="social-links">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fab fa-youtube"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            <div class="contact-social">
+                                <h3>Connect With Us</h3>
+                                <div class="social-links">
+                                    <a href="#"
+                                        ><i class="fab fa-linkedin"></i
+                                    ></a>
+                                    <a href="#"
+                                        ><i class="fab fa-twitter"></i
+                                    ></a>
+                                    <a href="#"
+                                        ><i class="fab fa-github"></i
+                                    ></a>
+                                    <a href="#"
+                                        ><i class="fab fa-youtube"></i
+                                    ></a>
+                                    <a href="#"
+                                        ><i class="fab fa-instagram"></i
+                                    ></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="faq-short">
+            <section class="faq-short">
+                <div class="container">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>
+                                    How soon will I hear back after contacting
+                                    you?
+                                </h3>
+                                <span class="accordion-icon"
+                                    ><i class="fas fa-plus"></i
+                                ></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    We typically respond to all inquiries within
+                                    24-48 business hours. For urgent matters, we
+                                    recommend giving us a call directly.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>Can I schedule a call with an advisor?</h3>
+                                <span class="accordion-icon"
+                                    ><i class="fas fa-plus"></i
+                                ></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Yes! You can schedule a 30-minute
+                                    consultation with one of our program
+                                    advisors to discuss your goals and determine
+                                    if our AI Engineering program is right for
+                                    you. Please email us at
+                                    admissions@launchpy.com or use our contact
+                                    form to request a call.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>Do you offer information sessions?</h3>
+                                <span class="accordion-icon"
+                                    ><i class="fas fa-plus"></i
+                                ></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Yes, we host virtual information sessions
+                                    every two weeks where you can learn more
+                                    about our program, meet instructors, and ask
+                                    questions. Check our events calendar or
+                                    contact us to register for the next
+                                    available session.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-more-faq">
+                        <a href="faq.html" class="btn secondary-btn"
+                            >View All FAQs</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
-                <div class="faq-accordion">
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h3>How soon will I hear back after contacting you?</h3>
-                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <a href="index.html">Launch<span>Py</span></a>
                         </div>
-                        <div class="accordion-content">
-                            <p>We typically respond to all inquiries within 24-48 business hours. For urgent matters, we recommend giving us a call directly.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h3>Can I schedule a call with an advisor?</h3>
-                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="accordion-content">
-                            <p>Yes! You can schedule a 30-minute consultation with one of our program advisors to discuss your goals and determine if our AI Engineering program is right for you. Please email us at admissions@launchpy.com or use our contact form to request a call.</p>
+                        <p>Transforming Software Engineers into AI Engineers</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            <h3>Do you offer information sessions?</h3>
-                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="accordion-content">
-                            <p>Yes, we host virtual information sessions every two weeks where you can learn more about our program, meet instructors, and ask questions. Check our events calendar or contact us to register for the next available session.</p>
-                        </div>
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="course.html">Course</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact</h3>
+                        <ul class="contact-info">
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                info@launchpy.com
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="view-more-faq">
-                    <a href="faq.html" class="btn secondary-btn">View All FAQs</a>
+                <div class="footer-bottom">
+                    <p>© 2025 LaunchPy. All rights reserved.</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </footer>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <div class="footer-logo">
-                        <a href="index.html">Launch<span>Py</span></a>
-                    </div>
-                    <p>Transforming Software Engineers into AI Engineers</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="course.html">Course</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Resources</h3>
-                    <ul>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Contact</h3>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-envelope"></i> info@launchpy.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Hyderabad, IN</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2025 LaunchPy. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-</body>
+        <script src="js/main.js"></script>
+    </body>
 </html>
